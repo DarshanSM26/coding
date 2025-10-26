@@ -3,11 +3,12 @@ import TitleComponent from '../components/TitleComponent'
 import ContentComponent from '../components/ContentComponent'
 import Image from 'react-bootstrap/Image';
 import StaffImage from './../assets/images/staff.jpg'
-
+import LayoutWithSidebar from '../components/LayoutWithSidebar'
 import FooterContentComponent from '../components/FooterContentComponent'
 const AboutUs = () => {
   return (
-    <div>
+    <LayoutWithSidebar>
+      <div>
         <TitleComponent title="About Us"></TitleComponent>
         <div className="container-fluid">
           <div className="row justify-content-evenly p-5">
@@ -25,7 +26,8 @@ const AboutUs = () => {
           </div>
         </div>
         <FooterContentComponent></FooterContentComponent>
-    </div>
+      </div>
+    </LayoutWithSidebar>
   )
 }
 
