@@ -4,10 +4,12 @@ import Card from 'react-bootstrap/Card';
 import TitleComponent from '../components/TitleComponent'
 import ContentComponent from '../components/ContentComponent'
 import FooterContentComponent from '../components/FooterContentComponent'
+import LayoutWithSidebar from '../components/LayoutWithSidebar'
 import ServiceImg from './../assets/images/service1.jpg'
 const Services = () => {
   return (
-    <div>
+    <LayoutWithSidebar>
+      <div>
       <TitleComponent title="Services Page"></TitleComponent>
       {/* --------- First Row of Servcie Details -------- */}
       <div className="container-fluid">
@@ -144,7 +146,8 @@ const Services = () => {
         </div>
       </div>
       <FooterContentComponent></FooterContentComponent>
-    </div>
+      </div>
+    </LayoutWithSidebar>
   )
 }
 

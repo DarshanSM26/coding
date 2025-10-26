@@ -8,9 +8,11 @@ import Image from 'react-bootstrap/Image';
 import Team1 from './../assets/images/user1.jpg'
 import Growth from './../assets/images/growth.jpg'
 import FooterContentComponent from '../components/FooterContentComponent';
+import LayoutWithSidebar from '../components/LayoutWithSidebar';
 const Home = () => {
   return (
-    <div>
+    <LayoutWithSidebar>
+      <div>
       <CarouselComponent></CarouselComponent>
       {/* ------ tagLine start here  ---- */}
       <div className='container-fluid'>
@@ -171,7 +173,8 @@ const Home = () => {
       {/* ---------------- organization growth ------ */}
 
       <FooterContentComponent></FooterContentComponent>
-    </div>
+      </div>
+    </LayoutWithSidebar>
   )
 }
 
