@@ -1,0 +1,45 @@
+.sidebar {
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar:hover {
+  box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+}
+
+.sidebar .nav-link {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+.sidebar .nav-link:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white !important;
+  transform: translateX(10px);
+  box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+.sidebar .nav-link i {
+  transition: transform 0.3s ease;
+}
+
+.sidebar .nav-link:hover i {
+  transform: scale(1.2);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sidebar {
+  animation: slideIn 0.5s ease-out;
+}
